@@ -2,6 +2,7 @@ import LeftSideBar from './components/LeftSideBar';
 import AllExpenses from './components/AllExpenses';
 import QuickInvoice from './components/QuickInvoice';
 import MyCard from './components/MyCard';
+import TransactionHistory from './components/TransactionHistory';
 export default function App() {
   return (
     <div className="container mx-auto bg-[#F7F9FA]">
@@ -20,6 +21,7 @@ export default function App() {
         <div className="col-span-2 ps-5 pe-10 mt-10">
           <div className="bg-white rounded-lg">
             <MyCard/>
+            <TransactionHistory/>
           </div>
         </div>
       </div>
