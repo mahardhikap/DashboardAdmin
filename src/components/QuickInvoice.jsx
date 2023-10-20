@@ -99,7 +99,7 @@ const QuickInvoice = () => {
               Item mount
             </label>
             <div className='flex'>
-            <select name="" id="" className='p-3 bg-[#FAFAFA] rounded-l-lg'>
+            <select name="" id="" className='p-3 bg-[#FAFAFA] rounded-l-lg text-[#AAAAAA]'>
                 <option value="USD">USD</option>
                 <option value="IDR">IDR</option>
             </select>

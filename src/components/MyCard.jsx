@@ -17,7 +17,7 @@ const MyCard = () => {
       >
         <SwiperSlide>
           <div className="bg-[#4EB7F2] rounded-lg relative min-w-[345px]">
-            <img src="/mask-group.svg" />
+            <img src="/mask-group.svg" className='w-full lg:w-auto'/>
             <div className="absolute w-full inset-0">
               <div className="flex items-center justify-between px-10 py-3">
                 <div>
@@ -28,7 +28,7 @@ const MyCard = () => {
                   <img src="/gallery.svg" />
                 </div>
               </div>
-              <div className="px-10 pt-10 flex flex-col items-end">
+              <div className="px-10 pt-10 sm:pt-40 md:pt-56 lg:pt-10 flex flex-col items-end">
                 <div className="text-white font-bold">0918 8124 0042 8129</div>
                 <div className="text-white font-light text-sm">12/20 - 124</div>
               </div>
