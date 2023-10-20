@@ -4,7 +4,7 @@ const LeftSideBar = () => {
             <div className="bg-[#C4C4C4] flex justify-center items-center my-5">
                 <img src="/gallery.svg" className="py-4"/>
             </div>
-            <div className="flex items-center gap-3 my-5 bg-[#FAFAFA] p-3 truncate">
+            <div className="flex items-center gap-3 my-5 bg-[#FAFAFA] p-3 truncate rounded-lg">
                 <div>
                     <img src="/icon-leftsidebar.svg" className="min-w-[40px]"/>
                 </div>

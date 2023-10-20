@@ -5,6 +5,7 @@ const TransactionHistory = () => {
         <div className="text-[#064061] font-medium">Transaction History</div>
         <div className="text-[#4EB7F2]">See all</div>
       </div>
+      <div className="font-normal p-2 text-[#AAAAAA]">13 April 2023</div>
       <div className="p-2">
         <div className="bg-[#FAFAFA] p-2 rounded-lg flex flex-row items-center justify-between">
           <div>

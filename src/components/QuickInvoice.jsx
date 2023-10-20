@@ -98,7 +98,13 @@ const QuickInvoice = () => {
             <label htmlFor="" className="text-[#064061]">
               Item mount
             </label>
-            <input className="p-3 w-full rounded-lg bg-[#FAFAFA]" />
+            <div className='flex'>
+            <select name="" id="" className='p-3 bg-[#FAFAFA] rounded-l-lg'>
+                <option value="USD">USD</option>
+                <option value="IDR">IDR</option>
+            </select>
+            <input className="p-3 rounded-r-lg bg-[#FAFAFA] w-full"/>
+            </div>
           </div>
           <button className="p-3 text-center bg-[#4EB7F2] rounded-lg font-medium text-white w-full">
             Send Money
