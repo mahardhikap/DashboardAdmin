@@ -8,7 +8,7 @@ const QuickInvoice = () => {
         </div>
       </div>
       <div className="text-[#064061]">Latest transaction</div>
-      <div className="flex items-center gap-2 overflow-x-hidden">
+      <div className="flex items-center gap-2 custom-scrollbar overflow-x-auto">
         <div className="flex items-center gap-3 bg-[#FAFAFA] w-fit p-2 rounded-lg  min-w-[300px]">
           <div>
             <img src="/avatar1.svg" />
