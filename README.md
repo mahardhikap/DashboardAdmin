@@ -1,8 +1,29 @@
-# React + Vite
+# Dashboard Bank
+## Built With
+* Vite + React (base code)
+* Tailwind CSS (styling)
+* Swipper (slide component)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Installation
+### 1. Clone this repository on your terminal (CMD)
+```
+git clone https://github.com/mahardhikap/DashboardAdmin
+```
+### 2. Open folder project
+```
+cd DashboardAdmin
+```
+### 3. Install dependencies
+```
+npm install
+```
+### 4. Run this project locally
+```
+npm run dev
+```
 
-Currently, two official plugins are available:
+After successful running, open http://localhost:5173/ on browser (chrome or mozilla)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Any question: 
+
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:putrad578@gmail.com)
