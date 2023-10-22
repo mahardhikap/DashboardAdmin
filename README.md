@@ -3,6 +3,7 @@
 * Vite + React (base code)
 * Tailwind CSS (styling)
 * Swipper (slide component)
+* Mirage JS
 
 ## Installation
 ### 1. Clone this repository on your terminal (CMD)
