@@ -1,4 +1,4 @@
-const AllExpenses = () => {
+const AllExpenses = (props) => {
   return (
     <div>
       <div className="flex items-center justify-between p-2">
@@ -24,7 +24,7 @@ const AllExpenses = () => {
             </div>
             <div className="font-medium text-white mb-2 mt-10">Balance</div>
             <div className="text-white my-2">April 2022</div>
-            <div className="font-bold text-white my-2 text-lg">$20,129</div>
+            <div className="font-bold text-white my-2 text-lg">${props.balance}</div>
           </div>
         </div>
         <div className="p-2">
@@ -39,7 +39,7 @@ const AllExpenses = () => {
             </div>
             <div className="font-medium text-[#064061] mb-2 mt-10">Income</div>
             <div className="text-[#AAAAAA] my-2">April 2022</div>
-            <div className="font-bold text-[#4EB7F2] my-2 text-lg">$20,129</div>
+            <div className="font-bold text-[#4EB7F2] my-2 text-lg">{props.income}</div>
           </div>
         </div>
         <div className="pe-2 py-2">
@@ -54,7 +54,7 @@ const AllExpenses = () => {
             </div>
             <div className="font-medium text-[#064061] mb-2 mt-10">Expenses</div>
             <div className="text-[#AAAAAA] my-2">April 2022</div>
-            <div className="font-bold text-[#4EB7F2] my-2 text-lg">$20,129</div>
+            <div className="font-bold text-[#4EB7F2] my-2 text-lg">{props.expenses}</div>
           </div>
         </div>
       </div>

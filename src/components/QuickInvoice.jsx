@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
-const QuickInvoice = () => {
+const QuickInvoice = (props) => {
   return (
     <div className="p-2">
       <div className="flex items-center justify-between">
@@ -15,52 +15,34 @@ const QuickInvoice = () => {
       </div>
       <div className="text-[#064061]">Latest transaction</div>
       {/* <div className="flex items-center gap-2"> */}
-        <Swiper
-          slidesPerView={'auto'}
-          centeredSlides={true}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="flex items-center gap-3 bg-[#FAFAFA] w-fit p-2 rounded-lg w-full cursor-pointer">
-              <div>
-                <img src="/avatar1.svg" />
+      <Swiper
+        slidesPerView={'auto'}
+        centeredSlides={true}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {props.invoice?.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className="flex items-center gap-3 bg-[#FAFAFA] w-fit p-2 rounded-lg w-full cursor-pointer">
+                <div>
+                  <img src="/avatar1.svg" />
+                </div>
+                <div>
+                  <div className="font-medium text-[#064061]">{item.name}</div>
+                  <div className="font-small text-xs">{item.email}</div>
+                </div>
               </div>
-              <div>
-                <div className="font-medium text-[#064061]">Madrani Andi</div>
-                <div className="font-small text-xs">Madraniadi20@gmail</div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex items-center gap-3 bg-[#FAFAFA] w-fit p-2 rounded-lg w-full cursor-pointer">
-              <div>
-                <img src="/avatar2.svg" className="w-[50px]" />
-              </div>
-              <div>
-                <div className="font-medium text-[#064061]">Josua Nunito</div>
-                <div className="font-small text-xs">joshnunito@gmail.com</div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex items-center gap-3 bg-[#FAFAFA] w-fit p-2 rounded-lg w-full cursor-pointer">
-              <div>
-                <img src="/avatar1.svg" />
-              </div>
-              <div>
-                <div className="font-medium text-[#064061]">Madrani Andi</div>
-                <div className="font-small text-xs">Madraniadi20@gmail</div>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
       {/* </div> */}
-      <hr className='my-5 border'/>
+      <hr className="my-5 border" />
       <div className="grid grid-cols-2">
         <div className="ps-2 pe-1">
           <div className="my-2">
@@ -98,12 +80,16 @@ const QuickInvoice = () => {
             <label htmlFor="" className="text-[#064061]">
               Item mount
             </label>
-            <div className='flex'>
-            <select name="" id="" className='p-3 bg-[#FAFAFA] rounded-l-lg text-[#AAAAAA]'>
+            <div className="flex">
+              <select
+                name=""
+                id=""
+                className="p-3 bg-[#FAFAFA] rounded-l-lg text-[#AAAAAA]"
+              >
                 <option value="USD">USD</option>
                 <option value="IDR">IDR</option>
-            </select>
-            <input className="p-3 rounded-r-lg bg-[#FAFAFA] w-full"/>
+              </select>
+              <input className="p-3 rounded-r-lg bg-[#FAFAFA] w-full" />
             </div>
           </div>
           <button className="p-3 text-center bg-[#4EB7F2] rounded-lg font-medium text-white w-full">
