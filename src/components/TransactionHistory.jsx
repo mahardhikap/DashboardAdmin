@@ -6,9 +6,9 @@ const TransactionHistory = (props) => {
         <div className="text-[#4EB7F2]">See all</div>
       </div>
       <div className="font-normal p-2 text-[#AAAAAA]">13 April 2023</div>
-      {props.history?.map((item) => {
+      {props.history?.map((item, index) => {
         return (
-          <div className="p-2">
+          <div className="p-2" key={index}>
             <div className="bg-[#FAFAFA] p-2 rounded-lg flex flex-row items-center justify-between">
               <div>
                 <div className="font-medium text-[#064061]">

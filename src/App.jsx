@@ -4,7 +4,7 @@ import AllExpenses from './components/AllExpenses';
 import QuickInvoice from './components/QuickInvoice';
 import MyCard from './components/MyCard';
 import TransactionHistory from './components/TransactionHistory';
-import { createServer, Server } from 'miragejs';
+import { Server } from 'miragejs';
 import data from '../data.json';
 
 let mirageServer;
@@ -41,9 +41,6 @@ export default function App() {
       totalExpense += totalCash;
     }
   }
-
-  console.log('Total Income:', totalIncome);
-  console.log('Total Expense:', totalExpense);
 
   return (
     <div className="container mx-auto bg-[#F7F9FA]">
